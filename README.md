@@ -42,27 +42,45 @@ This project aims to build an experiment management agent that assists with data
 
 
 
-1\. Dataset Check Agent  
+1\. Dataset Check Agent
 
 &#x20;  Checks whether the dataset split is reasonable.
 
 
 
-2\. Code Generation Agent  
+2\. Code Generation Agent
 
 &#x20;  Generates training and evaluation code templates.
 
 
 
-3\. Metric Summary Agent  
+3\. Metric Summary Agent
 
 &#x20;  Summarizes experiment results and converts them into paper-ready tables.
 
 
 
-4\. Writing Agent  
+4\. Writing Agent
 
 &#x20;  Generates experiment description and analysis paragraphs.
+
+
+
+\## Quick Start
+
+
+
+```bash
+
+python app/main.py
+
+
+
+The generated experiment report will be saved to:
+
+
+
+outputs/experiment\_report.md
 
 
 
