@@ -1,0 +1,27 @@
+experiment_name: das_event_recognition_baseline
+
+dataset:
+  total_original_samples: 900
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  augmentation_stage: train_only
+
+model:
+  name: dual_stream_resnet
+  input_features:
+    - MFCC
+    - differential_phase
+
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+
+metrics:
+  - accuracy
+  - precision
+  - recall
+  - f1_score
+  - inference_time
+  - parameter_count
